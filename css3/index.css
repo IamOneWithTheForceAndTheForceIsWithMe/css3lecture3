@@ -1,0 +1,41 @@
+#h1marker { /*  '*' - is universal selector; use '*' and look at inheritance on the developer toolsS*/
+    color: red;
+}
+.second {
+    color: blue;
+}
+div p {
+    color: rgb(57, 39, 163);
+}
+
+div ~ p { /*look at combinator +*/
+    color: red;
+}
+
+p : hover{ /*pseudoclass*/
+    color: green;
+}
+
+p::first-letter { /*pseudo-element*/
+    color: orange;
+}
+
+p::before { /*pseudo-element*/
+    content: "<";
+    color: green;
+    
+}
+
+p::after { /*pseudo-element*/
+    content: ">";
+    color: green;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+}
+
+:root {
+    font-size: 17px;
+}
